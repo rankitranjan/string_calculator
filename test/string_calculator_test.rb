@@ -6,4 +6,9 @@ class StringCalculatorTest < Minitest::Test
     calc = StringCalculator.new
     assert_equal 0, calc.add("")
   end
+
+  def test_single_number_returns_value
+    calc = StringCalculator.new
+    assert_equal 5, calc.add("5")
+  end
 end
